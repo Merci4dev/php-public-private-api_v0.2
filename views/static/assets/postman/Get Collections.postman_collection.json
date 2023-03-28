@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "018fa3ee-1fd1-49cc-ac4e-51003792cb4a",
+		"name": "Get Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24712241"
+	},
+	"item": [
+		{
+			"name": "Get All Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "79&GxwRJ-wXPu2X!=zE%geJuA&c:PA2LFC+fErgR=St&TCyb",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{endpoint}}courses",
+					"host": [
+						"{{endpoint}}courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Selected Columns",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}courses?select=id_course,title_course",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "id_course,title_course"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Filtered Params",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}courses?select=id_course,title_course&linkTo=title_course&equalTo=Aprender a programa on Vie dfdf",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "id_course,title_course"
+						},
+						{
+							"key": "linkTo",
+							"value": "title_course"
+						},
+						{
+							"key": "equalTo",
+							"value": "Aprender a programa on Vie dfdf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mult Filtered Params",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}courses?select=id_course,title_course,id_instructor_course&linkTo=title_course,id_instructor_course&equalTo=Aprender a programa on Vie dfdf,2",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "id_course,title_course,id_instructor_course"
+						},
+						{
+							"key": "linkTo",
+							"value": "title_course,id_instructor_course"
+						},
+						{
+							"key": "equalTo",
+							"value": "Aprender a programa on Vie dfdf,2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Oder by Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}courses?select=*&orderBy=id_course&orderMode=DESC",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "*"
+						},
+						{
+							"key": "orderBy",
+							"value": "id_course"
+						},
+						{
+							"key": "orderMode",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Limit Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}courses?select=id_course,title_course&startAt=0&endAt=3",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "id_course,title_course"
+						},
+						{
+							"key": "startAt",
+							"value": "0"
+						},
+						{
+							"key": "endAt",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Limit  Oder by Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}courses?select=id_course,title_course&startAt=0&endAt=5&orderBy=id_course&orderMode=DESC",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "id_course,title_course"
+						},
+						{
+							"key": "startAt",
+							"value": "0"
+						},
+						{
+							"key": "endAt",
+							"value": "5"
+						},
+						{
+							"key": "orderBy",
+							"value": "id_course"
+						},
+						{
+							"key": "orderMode",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Filter Limit Oder by  Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}courses?select=id_course,title_course&linkTo=title_course&equalTo=Aprender a programa on Vie dfdf&orderBy=id_course&orderMode=ASC&startAt=0&endAt=0",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "id_course,title_course"
+						},
+						{
+							"key": "linkTo",
+							"value": "title_course"
+						},
+						{
+							"key": "equalTo",
+							"value": "Aprender a programa on Vie dfdf"
+						},
+						{
+							"key": "orderBy",
+							"value": "id_course"
+						},
+						{
+							"key": "orderMode",
+							"value": "ASC"
+						},
+						{
+							"key": "startAt",
+							"value": "0"
+						},
+						{
+							"key": "endAt",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 2T  Rel Without  Order & Limit  Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}relations?rel=courses,instructors&type=course,instructor",
+					"host": [
+						"{{endpoint}}relations"
+					],
+					"query": [
+						{
+							"key": "rel",
+							"value": "courses,instructors"
+						},
+						{
+							"key": "type",
+							"value": "course,instructor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 2T  Rel Without  Order & Limit especific column Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}relations?select=title_course,name_instructor&rel=courses,instructors&type=course,instructor",
+					"host": [
+						"{{endpoint}}relations"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "title_course,name_instructor"
+						},
+						{
+							"key": "rel",
+							"value": "courses,instructors"
+						},
+						{
+							"key": "type",
+							"value": "course,instructor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 2T  Rel Without  Order & Limit especific column Order Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}relations?select=title_course,name_instructor,id_course&orderBy=id_course&orderMode=DESC&rel=courses,instructors&type=course,instructor",
+					"host": [
+						"{{endpoint}}relations"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "title_course,name_instructor,id_course"
+						},
+						{
+							"key": "orderBy",
+							"value": "id_course"
+						},
+						{
+							"key": "orderMode",
+							"value": "DESC"
+						},
+						{
+							"key": "rel",
+							"value": "courses,instructors"
+						},
+						{
+							"key": "type",
+							"value": "course,instructor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 3T  Rel With  Limit especific column Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}relations?startAt=0&endAt=3&select=id_country,name_country,initial_code,initial_dialcode&rel=countries,codes,dialcodes&type=country,code,dialcode",
+					"host": [
+						"{{endpoint}}relations"
+					],
+					"query": [
+						{
+							"key": "startAt",
+							"value": "0"
+						},
+						{
+							"key": "endAt",
+							"value": "3"
+						},
+						{
+							"key": "select",
+							"value": "id_country,name_country,initial_code,initial_dialcode"
+						},
+						{
+							"key": "rel",
+							"value": "countries,codes,dialcodes"
+						},
+						{
+							"key": "type",
+							"value": "country,code,dialcode"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 3T  Rel With  Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}relations?select=id_country,name_country,initial_code,initial_dialcode&rel=countries,codes,dialcodes&type=country,code,dialcode&linkTo=name_country&equalTo=Albania",
+					"host": [
+						"{{endpoint}}relations"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "id_country,name_country,initial_code,initial_dialcode"
+						},
+						{
+							"key": "rel",
+							"value": "countries,codes,dialcodes"
+						},
+						{
+							"key": "type",
+							"value": "country,code,dialcode"
+						},
+						{
+							"key": "linkTo",
+							"value": "name_country"
+						},
+						{
+							"key": "equalTo",
+							"value": "Albania"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Search Without  Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}products?select=*&linkTo=name_product&search=Smartphone",
+					"host": [
+						"{{endpoint}}products"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "*"
+						},
+						{
+							"key": "linkTo",
+							"value": "name_product"
+						},
+						{
+							"key": "search",
+							"value": "Smartphone"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Search With Filter & relations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}relations?rel=products,categories&type=product,category&select=name_product,name_category&linkTo=name_product,id_category_product&search=Smart,3",
+					"host": [
+						"{{endpoint}}relations"
+					],
+					"query": [
+						{
+							"key": "rel",
+							"value": "products,categories"
+						},
+						{
+							"key": "type",
+							"value": "product,category"
+						},
+						{
+							"key": "select",
+							"value": "name_product,name_category"
+						},
+						{
+							"key": "linkTo",
+							"value": "name_product,id_category_product"
+						},
+						{
+							"key": "search",
+							"value": "Smart,3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Range Without Order  &  Limit Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}products?select=*&between1=2020-03-20&between2=2022-03-20&linkTo=date_created_product",
+					"host": [
+						"{{endpoint}}products"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "*"
+						},
+						{
+							"key": "between1",
+							"value": "2020-03-20"
+						},
+						{
+							"key": "between2",
+							"value": "2022-03-20"
+						},
+						{
+							"key": "linkTo",
+							"value": "date_created_product"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Range With Order  &  Limit filter by id category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}products?select=*&between1=2020-03-20&between2=2022-03-20&linkTo=date_created_product&filterTo=id_category_product&inTo=1,3",
+					"host": [
+						"{{endpoint}}products"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "*"
+						},
+						{
+							"key": "between1",
+							"value": "2020-03-20"
+						},
+						{
+							"key": "between2",
+							"value": "2022-03-20"
+						},
+						{
+							"key": "linkTo",
+							"value": "date_created_product"
+						},
+						{
+							"key": "filterTo",
+							"value": "id_category_product"
+						},
+						{
+							"key": "inTo",
+							"value": "1,3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Range With Order  &  Limit filter by id category Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}relations?select=*&between1=2020-03-20&between2=2022-03-20&linkTo=date_created_product&filterTo=id_category_product&inTo=1,3&rel=products,categories&type=product,category",
+					"host": [
+						"{{endpoint}}relations"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "*"
+						},
+						{
+							"key": "between1",
+							"value": "2020-03-20"
+						},
+						{
+							"key": "between2",
+							"value": "2022-03-20"
+						},
+						{
+							"key": "linkTo",
+							"value": "date_created_product"
+						},
+						{
+							"key": "filterTo",
+							"value": "id_category_product"
+						},
+						{
+							"key": "inTo",
+							"value": "1,3"
+						},
+						{
+							"key": "rel",
+							"value": "products,categories"
+						},
+						{
+							"key": "type",
+							"value": "product,category"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

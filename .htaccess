@@ -1,0 +1,10 @@
+# To index all directory from the project. Avoi to access to the directories from others places
+Options All -Indexes
+
+# To work with friendly paths
+Options All -MultiViews
+RewriteEngine On 
+
+# Conditional to redirect the user to the index page when this insert others pahts
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

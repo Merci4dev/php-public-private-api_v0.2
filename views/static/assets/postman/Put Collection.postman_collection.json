@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "6b4e65ed-8e03-4509-9133-cb4f7b003496",
+		"name": "Put Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24712241"
+	},
+	"item": [
+		{
+			"name": "Put Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "79&GxwRJ-wXPu2X!=zE%geJuA&c:PA2LFC+fErgR=St&TCyb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title_course",
+							"value": "Aprender a programar Hoy",
+							"type": "text"
+						},
+						{
+							"key": "description_course",
+							"value": "Aprende a programar con Java",
+							"type": "text"
+						},
+						{
+							"key": "id_instructor_course",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "image_course",
+							"value": "programar.png",
+							"type": "text"
+						},
+						{
+							"key": "price_course",
+							"value": "9.99",
+							"type": "text"
+						},
+						{
+							"key": "date_course",
+							"value": "2023-04-04",
+							"type": "text"
+						},
+						{
+							"key": "date_created_course",
+							"value": "2023-03-02",
+							"type": "text"
+						},
+						{
+							"key": "date_updated_course",
+							"value": "2023-03-03",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{endpoint}}courses?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4MTIwNTMsImV4cCI6MTY3OTg5ODQ1MywiZGF0YSI6eyJpZCI6IjMyIiwiZW1haWwiOiJkZW1vMUBnbWFpbC5jb20ifX0.0O_i6KVGy4uOZ4b9_yA3ISHgPoTyM9tlPyLWhWUQ4vM&id=30&nameId=id_course&table=instructors&suffix=instructor",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4MTIwNTMsImV4cCI6MTY3OTg5ODQ1MywiZGF0YSI6eyJpZCI6IjMyIiwiZW1haWwiOiJkZW1vMUBnbWFpbC5jb20ifX0.0O_i6KVGy4uOZ4b9_yA3ISHgPoTyM9tlPyLWhWUQ4vM"
+						},
+						{
+							"key": "id",
+							"value": "30"
+						},
+						{
+							"key": "nameId",
+							"value": "id_course"
+						},
+						{
+							"key": "table",
+							"value": "instructors"
+						},
+						{
+							"key": "suffix",
+							"value": "instructor"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "cf03d7e5-6120-4b4c-bbd2-f31f1ad42894",
+		"name": "Post  Product Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24712241"
+	},
+	"item": [
+		{
+			"name": "Insert Data Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "79&GxwRJ-wXPu2X!=zE%geJuA&c:PA2LFC+fErgR=St&TCyb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title_course",
+							"value": "Aprender a programar con Java Hoy",
+							"type": "text"
+						},
+						{
+							"key": "description_course",
+							"value": "Aprende a programar con Java como profecional",
+							"type": "text"
+						},
+						{
+							"key": "id_instructor_course",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "image_course",
+							"value": "typear.png",
+							"type": "text"
+						},
+						{
+							"key": "price_course",
+							"value": "49.99",
+							"type": "text"
+						},
+						{
+							"key": "date_course",
+							"value": "2023-04-04",
+							"type": "text"
+						},
+						{
+							"key": "date_created_course",
+							"value": "2023-03-02",
+							"type": "text"
+						},
+						{
+							"key": "date_updated_course",
+							"value": "2023-03-03",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{endpoint}}courses",
+					"host": [
+						"{{endpoint}}courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Course wit JWT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "79&GxwRJ-wXPu2X!=zE%geJuA&c:PA2LFC+fErgR=St&TCyb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title_course",
+							"value": "Curso with  Python Today User",
+							"type": "text"
+						},
+						{
+							"key": "description_course",
+							"value": "Aprende a programar con Java como profeciona",
+							"type": "text"
+						},
+						{
+							"key": "id_instructor_course",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "image_course",
+							"value": "typear.png",
+							"type": "text"
+						},
+						{
+							"key": "price_course",
+							"value": "49.99",
+							"type": "text"
+						},
+						{
+							"key": "date_course",
+							"value": "2023-04-04",
+							"type": "text"
+						},
+						{
+							"key": "date_created_course",
+							"value": "2023-03-02",
+							"type": "text"
+						},
+						{
+							"key": "date_updated_course",
+							"value": "2023-03-03",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{endpoint}}courses?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4OTQyNjEsImV4cCI6MTY3OTk4MDY2MSwiZGF0YSI6eyJpZCI6IjM2IiwiZW1haWwiOiJpbnN0cnVjdG9yQGdtYWlsLmNvbSJ9fQ.02sgiz-gwgBCEfokbHglufdSx_RNtJ7uwEBL4UvdwGc&table=instructors&suffix=instructor",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4OTQyNjEsImV4cCI6MTY3OTk4MDY2MSwiZGF0YSI6eyJpZCI6IjM2IiwiZW1haWwiOiJpbnN0cnVjdG9yQGdtYWlsLmNvbSJ9fQ.02sgiz-gwgBCEfokbHglufdSx_RNtJ7uwEBL4UvdwGc"
+						},
+						{
+							"key": "table",
+							"value": "instructors"
+						},
+						{
+							"key": "suffix",
+							"value": "instructor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Produt wit JWT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "79&GxwRJ-wXPu2X!=zE%geJuA&c:PA2LFC+fErgR=St&TCyb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name_product",
+							"value": "Taza",
+							"type": "text"
+						},
+						{
+							"key": "description_product",
+							"value": "Taza par tee",
+							"type": "text"
+						},
+						{
+							"key": "id_category_product",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "image_product",
+							"value": "taza.png",
+							"type": "text"
+						},
+						{
+							"key": "price_product",
+							"value": "4.99",
+							"type": "text"
+						},
+						{
+							"key": "date_created_product",
+							"value": "2023-03-02",
+							"type": "text"
+						},
+						{
+							"key": "date_updated_product",
+							"value": "2023-03-03",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{endpoint}}products?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4OTQzNjIsImV4cCI6MTY3OTk4MDc2MiwiZGF0YSI6eyJpZCI6IjE2IiwiZW1haWwiOiJ1c2VyMUBnbWFpbC5jb20ifX0.O_TLn8ktPQLUx9zEx8G1vZDi34Oo49U_zzbUrpqfxaQ&table=users&suffix=user",
+					"host": [
+						"{{endpoint}}products"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4OTQzNjIsImV4cCI6MTY3OTk4MDc2MiwiZGF0YSI6eyJpZCI6IjE2IiwiZW1haWwiOiJ1c2VyMUBnbWFpbC5jb20ifX0.O_TLn8ktPQLUx9zEx8G1vZDi34Oo49U_zzbUrpqfxaQ"
+						},
+						{
+							"key": "table",
+							"value": "users"
+						},
+						{
+							"key": "suffix",
+							"value": "user"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

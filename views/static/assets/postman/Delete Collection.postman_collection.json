@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "46de7a8f-43b0-4f3e-915e-6a3c718dc186",
+		"name": "Delete Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24712241"
+	},
+	"item": [
+		{
+			"name": "Delete Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "79&GxwRJ-wXPu2X!=zE%geJuA&c:PA2LFC+fErgR=St&TCyb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{endpoint}}courses?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4MjgxMjMsImV4cCI6MTY3OTkxNDUyMywiZGF0YSI6eyJpZCI6IjM1IiwiZW1haWwiOiJkZW1vMUBnbWFpbC5jb20ifX0.zEKepW2XYBvhVjqd4iAqCtrJVcUuXDiqeWS7eAFX8L8&id=33&nameId=id_course&table=instructors&suffix=instructor",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4MjgxMjMsImV4cCI6MTY3OTkxNDUyMywiZGF0YSI6eyJpZCI6IjM1IiwiZW1haWwiOiJkZW1vMUBnbWFpbC5jb20ifX0.zEKepW2XYBvhVjqd4iAqCtrJVcUuXDiqeWS7eAFX8L8"
+						},
+						{
+							"key": "id",
+							"value": "33"
+						},
+						{
+							"key": "nameId",
+							"value": "id_course"
+						},
+						{
+							"key": "table",
+							"value": "instructors"
+						},
+						{
+							"key": "suffix",
+							"value": "instructor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Request Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "79&GxwRJ-wXPu2X!=zE%geJuA&c:PA2LFC+fErgR=St&TCyb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{endpoint}}courses?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4MjgyMTgsImV4cCI6MTY3OTkxNDYxOCwiZGF0YSI6eyJpZCI6IjM1IiwiZW1haWwiOiJkZW1vMUBnbWFpbC5jb20ifX0.9yLxWOVjTtZJMHcR6cgLrF38UkRhTqFG5ghp0dWpEh0&id=34&nameId=id_course&table=users&suffix=user",
+					"host": [
+						"{{endpoint}}courses"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzk4MjgyMTgsImV4cCI6MTY3OTkxNDYxOCwiZGF0YSI6eyJpZCI6IjM1IiwiZW1haWwiOiJkZW1vMUBnbWFpbC5jb20ifX0.9yLxWOVjTtZJMHcR6cgLrF38UkRhTqFG5ghp0dWpEh0"
+						},
+						{
+							"key": "id",
+							"value": "34"
+						},
+						{
+							"key": "nameId",
+							"value": "id_course"
+						},
+						{
+							"key": "table",
+							"value": "users"
+						},
+						{
+							"key": "suffix",
+							"value": "user"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
